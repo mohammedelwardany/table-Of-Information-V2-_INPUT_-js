@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+        body {
+            background: rgb(149, 160, 0);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form {
+            text-align: center;
+            margin: 50px auto 50px auto;
+        }
+        
+        form .input {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+        
+        .spanway {
+            color: red;
+            display: none;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">name</label>
+        <input type="text" id="name" class="input" onchange="namee()"><span class="spanway">not valid value!</span><br>
+        <label for="age">age</label>
+        <input type="text" id="age" class="input" onchange="agge()"><span class="spanway">not valid value!</span><br>
+        <label for="email">email</label>
+        <input type="text" id="email" class="input" onchange="emaiil()"><span class="spanway">not valid value!</span><br>
+        <button type="button" onclick="ok()">submit</button>
+
+        <input type="reset">
+    </form>
+    <table border="3" id="table">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+        </tr>
+
+
+
+    </table>
+    <!-- <h2>JavaScript HTML Events</h2>
+    Enter your name: <input type="text" id="fname" onchange="upperCase()">
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p> -->
+    <script src="/tableOfInformationV2_INPUT_.js"></script>
+</body>
+
+</html>
